@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'League Spartan', sans-serif;
+    background-image:
+            url("images/bg-pattern-top-desktop.svg"),
+            url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 118px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 88%;
+    letter-spacing: -0.027em;
+    color: var(--very-dark-magenta);
+    width: 417px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 129%;
+    letter-spacing: -0.024em;
+    color: var(--dark-grayish-magenta);
+    width: 417px;
+    margin-top: 26px;
+}
+
+.stats_container {
+    margin-left: 153px;
+    margin-top: 27px;
+}
+
+.stat {
+    background-color: var(--light-grayish-magenta);
+    width: 421px;
+    padding: 21px 0 20px 24px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.stat:nth-of-type(1n + 2) {
+    margin-top: 16px;
+    margin-left: 48px;
+}
+
+.stat:nth-of-type(3) {
+    margin-left: 96px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.03em;
+}
+
+.stats_text {
+    color: var(--very-dark-magenta);
+    margin-left: 32px;
+}
+
+.stars {
+    height: 16px;
+}
+
+.star {
+    margin-left: 8px;
+}
+
+.cards_container {
+    margin-top: 71px;
+    display: flex;
+}
+
+.card {
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+    padding: 40px 32px;
+    height: 154px;
+}
+
+.card:nth-of-type(1n + 2) {
+    margin-left: 30px;
+    margin-top: 16px;
+}
+
+.card:nth-of-type(3) {
+    margin-top: 32px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author_name {
+    margin-left: 23px;
+}
+
+.card img {
+    border-radius: 100vmax;
+    width: 40px;
+    height: 40px;
+}
+
+.cards_header {
+    color: var(--white);
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: var(--soft-pink);
+    margin-top: 5px;
+}
+
+.review {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.017em;
+    color: var(--light-grayish-magenta);
+    width: 286px;
+    margin-top: 27px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--very-dark-magenta);
+}
+
+.attribution a {
+    color: var(--soft-pink);
+}
+
+@media (min-width: 1441px) {
+
+    body {
+        justify-content: center;
+    }
+
+    .top_section {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1150px) {
+    html {
+        height: auto;
+    }
+
+    body {
+        height: auto;
+        padding: 82px 0 99px 0;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: -0.035em;
+        text-align: center;
+        width: 329px;
+    }
+
+    .description {
+        width: 329px;
+        margin-top: 23px;
+        text-align: center;
+    }
+
+    .top_section {
+        flex-direction: column;
+        margin-top: 39px;
+    }
+
+    .stats_container {
+        margin-left: 0;
+    }
+
+    .stat {
+        width: 329px;
+        padding: 16px 0 15px 0;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stat:nth-of-type(1n + 2) {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    .stat:nth-of-type(3) {
+        margin-left: 0;
+    }
+
+    .stats_text {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .star:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    .cards_container {
+        margin-top: 49px;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 40px 32px 31px;
+        width: 263px;
+        height: auto;
+    }
+
+    .card:nth-of-type(1n + 2) {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .review {
+        width: 263px;
+        margin-top: 27px;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image:
+                url("images/bg-pattern-top-mobile.svg"),
+                url("images/bg-pattern-bottom-mobile.svg");
+    }
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
