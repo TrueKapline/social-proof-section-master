@@ -19,7 +19,7 @@ body {
     align-items: center;
 }
 
-.top_section {
+.top {
     display: flex;
     flex-direction: row;
     margin-top: 118px;
@@ -44,7 +44,7 @@ h1 {
     margin-top: 26px;
 }
 
-.stats_container {
+.stats {
     margin-left: 153px;
     margin-top: 27px;
 }
@@ -89,7 +89,7 @@ h2 {
     display: block;
 }
 
-.cards_section {
+.cards {
     margin-top: 71px;
     display: flex;
 }
@@ -166,7 +166,7 @@ h3 {
         justify-content: center;
     }
 
-    .top_section {
+    .top {
         margin-top: 0;
     }
 }
@@ -195,12 +195,12 @@ h3 {
         text-align: center;
     }
 
-    .top_section {
+    .top {
         flex-direction: column;
         margin-top: 39px;
     }
 
-    .stats_container {
+    .stats {
         margin-left: 0;
     }
 
@@ -230,7 +230,7 @@ h3 {
         margin-left: 0;
     }
 
-    .cards_section {
+    .cards {
         margin-top: 49px;
         flex-direction: column;
     }
