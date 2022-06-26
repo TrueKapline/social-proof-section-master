@@ -81,13 +81,15 @@ h2 {
 
 .stars {
     height: 16px;
+    display: flex;
 }
 
 .star {
     margin-left: 8px;
+    display: block;
 }
 
-.cards_container {
+.cards_section {
     margin-top: 71px;
     display: flex;
 }
@@ -228,7 +230,7 @@ h3 {
         margin-left: 0;
     }
 
-    .cards_container {
+    .cards_section {
         margin-top: 49px;
         flex-direction: column;
     }
