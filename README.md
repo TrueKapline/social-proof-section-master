@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub/responsive-social-proof-section-bWm5lyw_eK)
+- [Live site URL](https://social-proof-section-master-jet.vercel.app/)
 
 ## My process
 
